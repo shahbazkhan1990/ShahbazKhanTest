@@ -10,13 +10,21 @@ import Foundation
 
 class UserViewModel{
     
+    typealias completionBlock = ([parent]) -> ()
     var apiHandler = APIHandler()
     var datasourceArray = [parent]()
 
-   func getDataFromAPIHandlerClass(){
-        let modUrl =  "https://5e99a9b1bc561b0016af3540.mockapi.io/jet2/api/v1/blogs?page=1&limit=10"
-        apiHandler.getDataFromApi(withUrl: modUrl)
-    
+   func getDataFromAPIHandlerClass(pagenumber: String,completionBlock : @escaping completionBlock){
+        let modUrl =  "https://5e99a9b1bc561b0016af3540.mockapi.io/jet2/api/v1/blogs?page=\(pagenumber)&limit=10"
+        
+            apiHandler.getDataFromApi(withUrl: modUrl) { [weak self] (arrUser) in
+                if(self?.datasourceArray.count != 0){
+                    self?.datasourceArray.append(contentsOf: arrUser)
+                }else{
+                    self?.datasourceArray = arrUser
+                }
+                completionBlock(arrUser)
+            }
     }
     
     func getNumberOfRowsInSection() -> Int{
@@ -28,6 +36,17 @@ class UserViewModel{
         
         let user = datasourceArray[index]
         return user
+    }
+    
+    func checkEveryTenthRow(index:Int) -> Bool
+    {
+        if (index % 10 == 0) {
+            return true
+        }
+        else
+        {
+            return false
+        }
     }
     
     func getCreatedDate(index : Int) -> String

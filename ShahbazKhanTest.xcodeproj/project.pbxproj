@@ -17,6 +17,7 @@
 		8499063725407CEF002FDC16 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499063625407CEF002FDC16 /* APIHandler.swift */; };
 		8499063925407E47002FDC16 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499063825407E47002FDC16 /* UserViewModel.swift */; };
 		8499063B25408087002FDC16 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499063A25408087002FDC16 /* ArticleTableViewCell.swift */; };
+		8499063D25409DAC002FDC16 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499063C25409DAC002FDC16 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8499063625407CEF002FDC16 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		8499063825407E47002FDC16 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		8499063A25408087002FDC16 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		8499063C25409DAC002FDC16 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				84990622254077FE002FDC16 /* SceneDelegate.swift */,
 				84990624254077FE002FDC16 /* ViewController.swift */,
 				8499063625407CEF002FDC16 /* APIHandler.swift */,
+				8499063C25409DAC002FDC16 /* Reachability.swift */,
 				8499063825407E47002FDC16 /* UserViewModel.swift */,
 				8499063425407B50002FDC16 /* Structure.swift */,
 				8499063A25408087002FDC16 /* ArticleTableViewCell.swift */,
@@ -156,6 +159,7 @@
 				8499063725407CEF002FDC16 /* APIHandler.swift in Sources */,
 				84990623254077FE002FDC16 /* SceneDelegate.swift in Sources */,
 				8499063B25408087002FDC16 /* ArticleTableViewCell.swift in Sources */,
+				8499063D25409DAC002FDC16 /* Reachability.swift in Sources */,
 				8499063525407B50002FDC16 /* Structure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +303,6 @@
 		84990632254077FF002FDC16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShahbazKhanTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,7 +319,6 @@
 		84990633254077FF002FDC16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShahbazKhanTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -10,7 +10,9 @@ import Foundation
 
 class APIHandler{
     
-    func getDataFromApi(withUrl strUrl : String){
+    typealias completionBlock = ([parent]) -> ()
+    
+    func getDataFromApi(withUrl strUrl : String, completionBlock : @escaping completionBlock){
         
         if let unwrappedUrl = URL(string: strUrl){
             
@@ -20,6 +22,18 @@ class APIHandler{
                     let jsonDecoder = JSONDecoder()
                     let userArray = try? jsonDecoder.decode( [parent].self , from: data!)
                     
+                    
+                    if userArray != nil{
+                        completionBlock(userArray!)
+                        
+                    }else{
+                        
+                        let aArray = [parent]()
+                        completionBlock(aArray)
+                    }
+                }else{
+                    let aArray = [parent]()
+                    completionBlock(aArray)
                 }
                 
             }).resume()
