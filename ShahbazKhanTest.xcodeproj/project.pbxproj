@@ -16,6 +16,7 @@
 		8499063525407B50002FDC16 /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499063425407B50002FDC16 /* Structure.swift */; };
 		8499063725407CEF002FDC16 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499063625407CEF002FDC16 /* APIHandler.swift */; };
 		8499063925407E47002FDC16 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499063825407E47002FDC16 /* UserViewModel.swift */; };
+		8499063B25408087002FDC16 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499063A25408087002FDC16 /* ArticleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8499063425407B50002FDC16 /* Structure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
 		8499063625407CEF002FDC16 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		8499063825407E47002FDC16 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		8499063A25408087002FDC16 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				8499063625407CEF002FDC16 /* APIHandler.swift */,
 				8499063825407E47002FDC16 /* UserViewModel.swift */,
 				8499063425407B50002FDC16 /* Structure.swift */,
+				8499063A25408087002FDC16 /* ArticleTableViewCell.swift */,
 				84990626254077FE002FDC16 /* Main.storyboard */,
 				84990629254077FF002FDC16 /* Assets.xcassets */,
 				8499062B254077FF002FDC16 /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 				84990621254077FE002FDC16 /* AppDelegate.swift in Sources */,
 				8499063725407CEF002FDC16 /* APIHandler.swift in Sources */,
 				84990623254077FE002FDC16 /* SceneDelegate.swift in Sources */,
+				8499063B25408087002FDC16 /* ArticleTableViewCell.swift in Sources */,
 				8499063525407B50002FDC16 /* Structure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
