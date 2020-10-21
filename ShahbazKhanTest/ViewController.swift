@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var viewModel = UserViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        getData()
+    }
+    
+    func getData()
+    {
+        viewModel.getDataFromAPIHandlerClass()
     }
 
 
